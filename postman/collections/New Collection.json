@@ -5,5 +5,154 @@
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
 		"_uid": "28210823-4f73524e-ab6e-49e5-a713-a3c0163a9a64"
 	},
-	"item": []
+	"item": [
+		{
+			"name": "New Request",
+			"id": "74d03724-516d-435c-8e14-9916bdf1f42b",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/employee",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"employee"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/employee/43",
+			"id": "3f7510cb-352b-4cc7-b75b-417e5efa5d67",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/employee/43",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"employee",
+						"43"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/employee",
+			"id": "3b7da00f-48c6-423f-87c4-c84e56234693",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": " {\r\n        \"name\": \"dsgn\",\r\n        \"gender\": \"feMALE\",\r\n        \"email_id\": \"gtrtha@as.as\",\r\n        \"age\": \"4\"\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/employee",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"employee"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/employee",
+			"id": "c4f9e39f-0b5d-4b7c-969d-2d93c0c5417b",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"k\",\r\n    \"gender\": \"MALE\",\r\n    \"email_id\": \"ef@as.as\",\r\n    \"age\": \"0\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/employee",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"employee"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/employee",
+			"id": "6c81fb3a-a405-47c7-9dc2-c0d0e1083f08",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": " {\r\n        \"id\": 44,\r\n        \"name\": \"AKASH\",\r\n        \"gender\": \"MALE\",\r\n        \"email_id\": \"akasa@as.as\",\r\n        \"age\": \"24\"\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/employee/49",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"employee",
+						"49"
+					]
+				}
+			},
+			"response": []
+		}
+	]
 }
