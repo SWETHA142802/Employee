@@ -1,7 +1,7 @@
-package com.employee.Employee.Service;
+package com.employee.Employee.service;
 
-import com.employee.Employee.Entity.EmployeeEntity;
-import com.employee.Employee.Repository.EmployeeRepository;
+import com.employee.Employee.entity.EmployeeEntity;
+import com.employee.Employee.repository.EmployeeRepository;
 import com.employee.Employee.dto.EmployeeDto;
 import org.springframework.stereotype.Service;
 

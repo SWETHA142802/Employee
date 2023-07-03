@@ -1,5 +1,5 @@
-package com.employee.Employee.Controller;
-import com.employee.Employee.Service.EmployeeService;
+package com.employee.Employee.controller;
+import com.employee.Employee.service.EmployeeService;
 import com.employee.Employee.dto.EmployeeDto;
 import org.springframework.web.bind.annotation.*;
 

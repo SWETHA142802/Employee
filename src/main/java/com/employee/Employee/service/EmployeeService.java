@@ -1,4 +1,4 @@
-package com.employee.Employee.Service;
+package com.employee.Employee.service;
 import com.employee.Employee.dto.EmployeeDto;
 
 import java.util.List;
