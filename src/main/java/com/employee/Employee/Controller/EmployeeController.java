@@ -1,7 +1,6 @@
 package com.employee.Employee.Controller;
-
-import com.employee.Employee.Entity.EmployeeEntity;
 import com.employee.Employee.Service.EmployeeService;
+import com.employee.Employee.dto.EmployeeDto;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -16,20 +15,20 @@ public class EmployeeController {
         this.employeeService = employeeService;
     }
     @GetMapping
-    public List<EmployeeEntity> findAllEmployee(){
+    public List<EmployeeDto> findAllEmployee(){
         return employeeService.findAllEmployee();
     }
     @GetMapping("/{id}")
-    public Optional<EmployeeEntity> findEmployeeById(@PathVariable("id") Long id){
+    public Optional<EmployeeDto> findEmployeeById(@PathVariable("id") Long id){
         return employeeService.findById(id);
     }
     @PostMapping
-    public EmployeeEntity saveEmployee(@RequestBody EmployeeEntity employeeEntity){
-        return employeeService.saveEmployee(employeeEntity);
+    public EmployeeDto saveEmployee(@RequestBody EmployeeDto employeeDto){
+        return employeeService.saveEmployee(employeeDto);
     }
     @PutMapping
-    public EmployeeEntity updateEmployee(@RequestBody EmployeeEntity employeeEntity){
-        return employeeService.updateEmployee(employeeEntity);
+    public EmployeeDto updateEmployee(@RequestBody EmployeeDto employeeDto){
+        return employeeService.updateEmployee(employeeDto);
     }
     @DeleteMapping("/{id}")
     public void deleteEmployeeById(@PathVariable("id") Long id){

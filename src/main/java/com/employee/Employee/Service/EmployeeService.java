@@ -1,15 +1,14 @@
 package com.employee.Employee.Service;
-
-import com.employee.Employee.Entity.EmployeeEntity;
+import com.employee.Employee.dto.EmployeeDto;
 
 import java.util.List;
 import java.util.Optional;
 
 public interface EmployeeService {
-    List<EmployeeEntity> findAllEmployee();
-    Optional<EmployeeEntity> findById(Long id);
-    EmployeeEntity saveEmployee(EmployeeEntity employeeEntity);
-    EmployeeEntity updateEmployee(EmployeeEntity employeeEntity);
+    List<EmployeeDto> findAllEmployee();
+    Optional<EmployeeDto> findById(Long id);
+    EmployeeDto saveEmployee(EmployeeDto employeeDto);
+    EmployeeDto updateEmployee(EmployeeDto employeeDto);
     void deleteEmployee(Long id);
 
 }
